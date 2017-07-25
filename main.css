@@ -1,0 +1,8 @@
+#hero-image {
+  background-image: url(http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg);
+}
+
+#hero-image,
+#map {
+  height: 30em;
+}

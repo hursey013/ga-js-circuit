@@ -3,10 +3,76 @@
   <head>
     <meta charset="UTF-8">
     <title>JSC Unit 9 Project</title>
-
+    <link href="main.css" rel="stylesheet" type="text/css" >
     <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/basscss-background-images@0.1.1/css/background-images.css" rel="stylesheet">
+    <link href="https://unpkg.com/basscss-forms@1.0.0/index.css" rel="stylesheet">
+    <link href="https://unpkg.com/basscss-btn@1.1.1/css/btn.css" rel="stylesheet">
+    <link href="https://unpkg.com/basscss-btn-primary@1.1.0/css/btn-primary.css" rel="stylesheet">
   </head>
   <body>
-
+    <div class="max-width-4 mx-auto mb4 px2">
+      <header class="center">
+        <h1 class="h1 caps mt4 mb0 regular">Monk’s Cafe</h1>
+        <p class="h3">“The Coffee Shop”</p>
+        <div id="hero-image" class="bg-cover bg-no-repeat bg-center rounded">
+        </div>
+      </header>
+      <section class="mb2">
+        <h2 class="caps mt4 regular center">Reservations</h2>
+        <div class="sm-flex items-stretch mxn2">
+          <div class="sm-col-6 px2 mb2">
+            <div class="border">
+              <h3 class="caps regular center">Make a Reservation</h3>
+              <form class="border-box px2 mb2">
+                <label class="label">Name</label>
+                <input type="text" class="input border-box">
+                <label class="label">Date</label>
+                <input type="text" class="input border-box">
+                <button type="submit" class="btn col-12 btn-primary">Confirm</button>
+              </form>
+            </div>
+          </div>
+          <div class="sm-flex sm-col-6 px2 mb2">
+            <div class="col-12 border">
+              <h3 class="caps regular center">Existing Reservations</h3>
+              <table class="table-light col-12 px2">
+                <thead>
+                  <tr>
+                    <th class="col-6">Name</th>
+                    <th class="col-6">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb2">
+        <h2 class="caps mt4 regular center">Come Dine with Us</h2>
+          <div id="map" class="col-12 rounded"></div>
+      </section>
+      <section class="mb2">
+        <h2 class="caps mt4 pb2 regular center border-bottom">Customer Reviews</h2>
+        <div class="sm-flex mxn2">
+          <div class="sm-col-6 px2 mb2">
+            <img class="fit rounded" src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg">
+          </div>
+          <div class="sm-col-6 px2 mb2 right-align">
+            <blockquote>
+              <p class="h3">“Big lettuce, big carrots, tomatoes like volleyballs.”</p>
+              <cite>&mdash; Jerry Seinfeld, on The BIG Salad</cite>
+            </blockquote>
+          </div>
+      </section>
+      <footer class="mt4 border-top center">
+        <p>&copy; Monk's Cafe</p>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf63b6PK5Ci3P06hWxGpFBKAu9P4jOoH4&callback=initMap" async defer></script>
   </body>
 </html>
